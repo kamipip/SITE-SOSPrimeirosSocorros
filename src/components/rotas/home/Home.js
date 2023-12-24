@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import logoImage from '../../../imagens/logo.png'; 
 import jadsonImage from '../../../imagens/jadson.png'; 
 import kamiImage from '../../../imagens/kami.png'; 
@@ -7,17 +9,19 @@ import lucasImage from '../../../imagens/lucas.jpg';
 
 const Home = () => {
   const handlePersonClick = (pageUrl) => {
-    window.open(pageUrl, '_blank');
+    console.log('Clique na página')
   };
 
   return (
     <div>
       {/* Barra Superior */}
+      <Link to="/">
       <div className="barra-superior">
         <div className="retangulo-branco">
           <img src={logoImage} alt="Logo do App" />
         </div>
       </div>
+      </Link>
 
       {/* Barra de Navegação */}
       <div className="barra-navegacao">
@@ -51,19 +55,25 @@ const Home = () => {
 
         {/* Container de Eclipses */}
         <div className="container-eclipses">
-          <div className="eclipse" onClick={() => handlePersonClick('/jadson')}>
-            <img src={jadsonImage} alt="Jadson" />
-            <p>Jadson</p>
-          </div>
-          <div className="eclipse" onClick={() => handlePersonClick('/kami')}>
-            <img src={kamiImage} alt="Kami" />
-            <p>Kami</p>
-          </div>
-          <div className="eclipse" onClick={() => handlePersonClick('/lucas')}>
-            <img src={lucasImage} alt="Lucas" />
-            <p>Lucas</p>
-          </div>
+      <Link to="/jadson" onClick={() => handlePersonClick('/jadson')}>
+        <div className="eclipse">
+          <img src={jadsonImage} alt="Jadson" />
+          <p>Jadson</p>
         </div>
+      </Link>
+      <Link to="/kami" onClick={() => handlePersonClick('/kami')}>
+        <div className="eclipse">
+          <img src={kamiImage} alt="Kami" />
+          <p>Kami</p>
+        </div>
+      </Link>
+      <Link to="/lucas" onClick={() => handlePersonClick('/lucas')}>
+        <div className="eclipse">
+          <img src={lucasImage} alt="Lucas" />
+          <p>Lucas</p>
+        </div>
+      </Link>
+    </div>
 
         {/* Rodapé */}
         <div className="rodape">

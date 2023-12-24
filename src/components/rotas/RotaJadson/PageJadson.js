@@ -1,28 +1,45 @@
-
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import jadsonImage from './imagens/jadson.png';
 import logoImage from './imagens/logo.png';
 
 
 
-
+const emojis = ["😊", "🏖️", "🎸", "💡", "💻"];
 const PageJadson = () => {
-  const emojis = ["😊", "🏖️", "🎸", "💡", "💻"];
+  const [emoji, setEmoji] = useState(emojis[0]);
 
-  const mudarEmoji = () => {
-    const emojiSelecionado = emojis[Math.floor(Math.random() * emojis.length)];
-    document.getElementById("emoji").textContent = emojiSelecionado;
-  };
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      let novoEmoji;
+      do {
+        novoEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+      } while (novoEmoji === emoji);
 
+      setEmoji(novoEmoji);
+    }, 2000); // Intervalo em milissegundos (neste caso, 2 segundos)
+
+    // Limpar o intervalo quando o componente é desmontado
+    return () => clearInterval(intervalId);
+  }, [emoji]); // Adicionado emoji como uma dependência para evitar warning de useEffect
+
+
+  
+
+ 
   return (
     <div>
       {/* Barra Superior */}
+      <Link to="/">
       <div className="barra-superior">
         <div className="retangulo-branco">
           <img src={logoImage} alt="Logo do App" />
         </div>
       </div>
+      </Link>
 
       {/* Barra de Navegação */}
       <div className="barra-navegacao">
@@ -41,11 +58,11 @@ const PageJadson = () => {
       <div className="barra-fina"></div>
 
       <div className="container-pessoa">
-        <div className="eclipsepessoa" onClick={mudarEmoji}>
+        <div className="eclipsepessoa">
           <img src={jadsonImage} alt="Jadson" />
 
           <div className="emojis-container">
-            <span className="emoji" id="emoji">😊</span>
+            <span className="emoji" id="emoji">{emoji}</span>
           </div>
         </div>
       </div>
@@ -55,12 +72,19 @@ const PageJadson = () => {
       </div>
 
       <div className="botoes-container">
-        <a className="botao" href="email@exemplo.com">E-mail</a>
-        <a className="botao" href="https://github.com/JadsonTSI" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a className="botao" href="https://www.instagram.com/jadson_leitao/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a className="botao" href="email@exemplo.com">
+          <FontAwesomeIcon icon={faEnvelope} /> 
+        </a>
+        <a className="botao" href="https://github.com/JadsonTSI" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} /> 
+        </a>
+        <a className="botao" href="https://www.instagram.com/jadson_leitao/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} /> 
+        </a>
       </div>
 
       <div className="rodape">
+        {/* Conteúdo do rodapé */}
       </div>
     </div>
   );
