@@ -68,7 +68,8 @@ const PageLucas = () => {
       </div>
 
       <div className="sobre-pessoa">
-        <p>Olá, meu nome é Lucas Matheus</p>
+        <p>Olá, meu nome é Lucas Matheus, e sou um profissional apaixonado pela interseção entre desenvolvimento e segurança cibernética. Atualmente, lidero a transformação da LavaiLavem Turismo como CoFundador, onde fui responsável pela informatização dos processos e reestruturação da marca, integrando tecnologias emergentes. </p>
+        <p>Além disso, acabei contribuindo no desenvolvimento e segurança da informação de grandes instituições como TikTok, Itaú, PRF e UFRN. </p>
       </div>
 
       <div className="botoes-container">
