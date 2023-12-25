@@ -28,10 +28,10 @@ const Home = () => {
         <a href="https://github.com/samsepiol1/SOS-Primeiros-Socorros" target="_blank" rel="noopener noreferrer">
           Documentação
         </a>
-        <a href="/#download" target="_blank" rel="noopener noreferrer">
+        <a href="/#download" target="_blank" rel="noopener noreferrer"> {/* Adcionar link */}
           Download
         </a>
-        <a href="/#repositorio" target="_blank" rel="noopener noreferrer">
+        <a href="/#repositorio" target="_blank" rel="noopener noreferrer"> {/* Adcionar link */}
           Repositório
         </a>
       </div>
