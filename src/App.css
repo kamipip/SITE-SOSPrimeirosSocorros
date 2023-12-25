@@ -183,7 +183,7 @@ body {
   padding: 20px;
 }
 
-/* Adaptação para telas menores */
+
 @media only screen and (max-width: 768px) {
   .segundo-paragrafo {
     margin-top: -15px; 
@@ -245,9 +245,9 @@ body {
 }
 
 .botoes-container {
-  position: fixed;
-  top: 0px;
-  right: 825px;
+  position: relative;
+  top: -700px;
+  right: 2px;
   text-align: center;
   margin-top: 780px;
 }
@@ -262,6 +262,19 @@ body {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .botoes-container {
+    margin-top: 5px; 
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .botoes-container {
+    margin-top: 2px; 
+  }
 }
 
 .botao:hover {
@@ -317,7 +330,7 @@ body {
 }
 
 .sobre-pessoa {
-  margin-top: -110px; /* Ajuste conforme necessário */
+  margin-top: -600px; 
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -329,11 +342,37 @@ body {
   line-height: 1.8;
   font-family: 'League Spartan', sans-serif;
   font-weight: normal;
-  margin: -350px 0 10px; /* Ajuste a margem superior conforme necessário */
+  margin: 20px 0 10px; 
   max-width: 80%;
   white-space: normal;
   overflow: hidden;
 }
+
+/* Adaptação para telas menores */
+@media only screen and (max-width: 768px) {
+  .sobre-pessoa {
+    margin-top: 10px; 
+  }
+
+  .sobre-pessoa p {
+    font-size: 16px; 
+    margin: 15px 0 10px; 
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .sobre-pessoa {
+    margin-top: 5px; 
+  }
+
+  .sobre-pessoa p {
+    font-size: 14px; 
+    margin: 10px 0 5px; 
+  }
+}
+
+
 .emojis-container {
   display: flex;
   justify-content: center;
