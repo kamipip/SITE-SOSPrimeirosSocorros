@@ -30,6 +30,19 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .barra-superior {
+    height: 70px;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .barra-superior {
+    height: 60px;
+  }
+}
+
 .rodape {
   position: fixed;
   bottom: 0;
@@ -44,6 +57,23 @@ body {
   overflow: hidden;
 }
 
+/* Adaptação para telas menores */
+@media only screen and (max-width: 768px) {
+  .rodape {
+    height: 20px; 
+    font-size: 14px; 
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .rodape {
+    height: 15px; 
+    font-size: 12px; 
+  }
+}
+
+/* Estilo padrão para o retângulo branco */
 .retangulo-branco {
   background-color: #ffffff;
   width: 139px;
@@ -62,9 +92,52 @@ body {
   margin-top: -10px;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .retangulo-branco {
+    width: 100px; 
+    height: 90px; 
+    border-radius: 30px; 
+    margin-top: 40px; 
+  }
+
+  .retangulo-branco img {
+    max-width: 70%; 
+    max-height: 70%; 
+    border-radius: 15px; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .retangulo-branco {
+    width: 80px; 
+    height: 70px; 
+    border-radius: 20px; 
+    margin-top: 30px; 
+  }
+
+  .retangulo-branco img {
+    max-width: 60%; 
+    max-height: 60%; 
+    border-radius: 10px; 
+  }
+}
+
 .primeiro-paragrafo {
   text-align: center;
   margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .primeiro-paragrafo {
+    margin-top: 15px; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .primeiro-paragrafo {
+    margin-top: 10px; 
+  }
 }
 
 .barra-navegacao {
@@ -110,11 +183,31 @@ body {
   padding: 20px;
 }
 
-.segundo-paragrafo p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 15px;
+/* Adaptação para telas menores */
+@media only screen and (max-width: 768px) {
+  .segundo-paragrafo {
+    margin-top: -15px; 
+    padding: 15px; 
+  }
+
+  .segundo-paragrafo p {
+    font-size: 16px; 
+    margin-bottom: 10px; 
+  }
 }
+
+@media only screen and (max-width: 480px) {
+  .segundo-paragrafo {
+    margin-top: -10px; 
+    padding: 10px; 
+  }
+
+  .segundo-paragrafo p {
+    font-size: 14px; 
+    margin-bottom: 5px; 
+  }
+}
+
 
 .container-eclipses {
   display: flex;
@@ -152,8 +245,11 @@ body {
 }
 
 .botoes-container {
+  position: fixed;
+  top: 0px;
+  right: 825px;
   text-align: center;
-  margin-top: -150px;
+  margin-top: 780px;
 }
 
 .botao {
@@ -221,7 +317,7 @@ body {
 }
 
 .sobre-pessoa {
-  margin-top: 20px; /* Ajuste conforme necessário */
+  margin-top: -110px; /* Ajuste conforme necessário */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;

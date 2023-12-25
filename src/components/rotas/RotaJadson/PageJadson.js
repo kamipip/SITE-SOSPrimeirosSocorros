@@ -68,7 +68,14 @@ const PageJadson = () => {
       </div>
 
       <div className="sobre-pessoa">
-        <p>Olá, sou Jadson Leitão, um entusiasta da vida com uma paixão por várias áreas. Durante o dia, mergulho no mundo da programação, explorando códigos e soluções criativas. <br /> Nas horas livres, encontro inspiração na serenidade das praias, onde recarrego energias e encontro paz. Além disso, faço parte de uma banda na igreja, onde minha paixão <br /> pela música se une à minha espiritualidade. Essas diferentes facetas da minha vida se entrelaçam, formando a sinfonia única que é a minha jornada.</p>
+        <p>Olá, me chamo Jadson Leitão. Mergulhei no fascinante universo da tecnologia desde a infância, hoje aos 20 anos cresce uma paixão enquanto curso Sistemas para Internet em Parnamirim.
+           Esta jornada acadêmica tem se revelado uma experiência incrível, repleta de desafios e aprendizados enriquecedores. <br />
+           No âmbito prático, minha contribuição nesse projeto concentra-se na elaboração da documentação e na execução dos testes. Essa abordagem orientada para detalhes visa 
+           não apenas garantir o êxito do projeto, mas também promover sua eficiência e excelência. <br />
+           Além dos aspectos acadêmicos e profissionais, minha trajetória é marcada por uma busca incessante pelo aprimoramento contínuo. Encaro cada desafio como uma oportunidade 
+           de crescimento, e acredito que a inovação e a dedicação são pilares essenciais para se destacar neste dinâmico campo da tecnologia. <br />
+          Convido você a explorar mais sobre minha jornada e meu trabalho clicando em um dos botões abaixo. Estou animado para compartilhar mais sobre minha paixão pela tecnologia e as experiências que moldaram minha jornada até aqui.
+        </p>
       </div>
 
       <div className="botoes-container">
@@ -83,10 +90,14 @@ const PageJadson = () => {
         </a>
       </div>
 
-      <div className="rodape">
-        {/* Conteúdo do rodapé */}
+        {/* Rodapé */}
+        <div className="rodape">
+          <div className="rodape-textos">
+            <div className="rodape-texto">Baixe nosso aplicativo gratuito. Disponível para Android</div>
+          </div>
+        </div>
       </div>
-    </div>
+  
   );
 };
 
