@@ -92,7 +92,6 @@ body {
   margin-top: -10px;
 }
 
-
 @media only screen and (max-width: 768px) {
   .retangulo-branco {
     width: 100px; 
@@ -167,44 +166,52 @@ body {
 .titulo-equipe {
   font-family: 'Horizon', sans-serif;
   text-align: center;
-  margin: 70px 0 50px;
-  padding: 20px;
+  margin: 10vw 0 5vw; /* Use unidades relativas à largura da viewport */
+  padding: 2vw;
   color: var(--cor-principal);
   position: absolute;
-  top: 65%; /* Ajuste o valor para mover para baixo */
+  top: 25%; /* Ajuste o valor para mover para baixo */
   left: 0;
   right: 0;
   transform: translateY(-50%);
 }
 
-.segundo-paragrafo {
-  text-align: justify;
-  margin-top: -20px;
-  padding: 20px;
+.segundo-paragrafo p {
+  font-size: 1.0vw; /* Ajuste conforme necessário */
+  margin-bottom: 1vw; /* Ajuste conforme necessário */
 }
 
+/* Outras regras de estilo do .segundo-paragrafo aqui */
 
 @media only screen and (max-width: 768px) {
+  .titulo-equipe {
+    margin: 8vw 0 4vw; /* Ajuste conforme necessário */
+  }
+
   .segundo-paragrafo {
-    margin-top: -15px; 
-    padding: 15px; 
+    margin-top: -5vw; /* Ajuste conforme necessário */
+    padding: 4vw; /* Ajuste conforme necessário */
   }
 
   .segundo-paragrafo p {
-    font-size: 16px; 
-    margin-bottom: 10px; 
+    font-size: 4vw; /* Ajuste conforme necessário */
+    margin-bottom: 2vw; /* Ajuste conforme necessário */
   }
 }
 
 @media only screen and (max-width: 480px) {
+  .titulo-equipe {
+    margin: 15vw 0 3vw; /* Ajuste conforme necessário */
+  }
+
   .segundo-paragrafo {
-    margin-top: -10px; 
-    padding: 10px; 
+    margin-top: -3vw; /* Ajuste conforme necessário */
+    padding: 3vw; /* Ajuste conforme necessário */
   }
 
   .segundo-paragrafo p {
-    font-size: 14px; 
-    margin-bottom: 5px; 
+    font-size: 4vw; /* Ajuste conforme necessário */
+    margin-bottom: 1.5vw; /* Ajuste conforme necessário */
   }
 }
 
@@ -212,14 +219,15 @@ body {
 .container-eclipses {
   display: flex;
   justify-content: center;
-  margin-top: 45px;
+  margin-top: 3vw; /* Ajuste conforme necessário */
 }
 
 .eclipse,
 .eclipsepessoa {
-  width: 154px;
-  height: 147px;
-  margin-right: 0px;
+  width: 200px; /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário */
+  margin-right: 2px; /* Adicione margem entre as eclipses, ajuste conforme necessário */
+  margin-top: 20px;
   cursor: pointer;
   position: relative;
   text-align: center;
@@ -228,7 +236,7 @@ body {
 
 .eclipse img,
 .eclipsepessoa img {
-  width: 102%;
+  width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
@@ -236,20 +244,62 @@ body {
 
 .eclipse p,
 .eclipsepessoa p {
-  margin-top: 50px;
+  margin-top: 20px; /* Ajuste conforme necessário */
 }
 
-.eclipse:hover,
+@media only screen and (max-width: 768px) {
+  .container-eclipses {
+    margin-top: 70px; /* Ajuste conforme necessário */
+  }
+
+  .eclipse,
+  .eclipsepessoa {
+    width: 30vw; /* Ajuste conforme necessário */
+    height: 30vw; /* Ajuste conforme necessário */
+    margin-right: 1vw; /* Ajuste conforme necessário */
+  }
+
+  .eclipse p,
+  .eclipsepessoa p {
+    margin-top: 3vw; /* Ajuste conforme necessário */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-eclipses {
+    margin-top: 8vw; /* Ajuste conforme necessário */
+  }
+
+  .eclipse,
+  .eclipsepessoa {
+    width: 40vw; /* Ajuste conforme necessário */
+    height: 40vw; /* Ajuste conforme necessário */
+    margin-right: 2vw; /* Ajuste conforme necessário */
+  }
+
+  .eclipse p,
+  .eclipsepessoa p {
+    margin-top: 4vw; /* Ajuste conforme necessário */
+  }
+}
+
+.eclipse:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .eclipsepessoa:hover {
   transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .botoes-container {
-  position: relative;
-  top: -700px;
-  right: 2px;
+  position: fixed;
+  bottom: 50px; 
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  margin-top: 780px;
+  margin-bottom: -290px;
 }
 
 .botao {
@@ -266,14 +316,21 @@ body {
 
 @media only screen and (max-width: 768px) {
   .botoes-container {
-    margin-top: 5px; 
+    margin-top: 20px; 
   }
 }
 
 
 @media only screen and (max-width: 480px) {
   .botoes-container {
-    margin-top: 2px; 
+    margin-bottom: -105%; 
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  .botoes-container {
+    bottom: 50%;
+    transform: translate(-50%, 50%);
   }
 }
 
@@ -308,8 +365,6 @@ body {
   }
 }
 
-
-
 .rodape-textos {
   display: flex;
   animation: moveText 10s linear infinite, colorChange 10s linear infinite;
@@ -325,12 +380,12 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: calc(100vh - 94px);
+  min-height: calc(100vh - 94px);
   margin-top: 10px;
 }
 
 .sobre-pessoa {
-  margin-top: -600px; 
+  margin-top: -30%; 
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -351,7 +406,7 @@ body {
 /* Adaptação para telas menores */
 @media only screen and (max-width: 768px) {
   .sobre-pessoa {
-    margin-top: 10px; 
+    margin-top: -104%; 
   }
 
   .sobre-pessoa p {
@@ -362,13 +417,9 @@ body {
 
 
 @media only screen and (max-width: 480px) {
-  .sobre-pessoa {
-    margin-top: 5px; 
-  }
-
   .sobre-pessoa p {
     font-size: 14px; 
-    margin: 10px 0 5px; 
+    margin: 1px 0 2px; 
   }
 }
 

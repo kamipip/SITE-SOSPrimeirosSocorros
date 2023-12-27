@@ -39,7 +39,7 @@ const Home = () => {
       {/* Barra Fina */}
       <div className="barra-fina"></div>
 
-      {/* Conteúdo Principal */}
+      
       <div className="conteudo">
         <h1 className="titulo-equipe">Nossa equipe:</h1>
 
@@ -55,25 +55,28 @@ const Home = () => {
 
         {/* Container de Eclipses */}
         <div className="container-eclipses">
-      <Link to="/jadson" onClick={() => handlePersonClick('/jadson')}>
-        <div className="eclipse">
-          <img src={jadsonImage} alt="Jadson" />
-          <p>Jadson</p>
+          <div className="eclipse" onClick={() => handlePersonClick('/jadson')}>
+            <Link to="/jadson">
+              <img src={jadsonImage} alt="Jadson" />
+            </Link>
+            <p>Jadson</p>
+          </div>
+
+          <div className="eclipse" onClick={() => handlePersonClick('/kami')}>
+            <Link to="/kami">
+              <img src={kamiImage} alt="Kami" />
+            </Link>
+            <p>Kami</p>
+          </div>
+
+          <div className="eclipse" onClick={() => handlePersonClick('/lucas')}>
+            <Link to="/lucas">
+              <img src={lucasImage} alt="Lucas" />
+            </Link>
+            <p>Lucas</p>
+          </div>
         </div>
-      </Link>
-      <Link to="/kami" onClick={() => handlePersonClick('/kami')}>
-        <div className="eclipse">
-          <img src={kamiImage} alt="Kami" />
-          <p>Kami</p>
-        </div>
-      </Link>
-      <Link to="/lucas" onClick={() => handlePersonClick('/lucas')}>
-        <div className="eclipse">
-          <img src={lucasImage} alt="Lucas" />
-          <p>Lucas</p>
-        </div>
-      </Link>
-    </div>
+
 
         {/* Rodapé */}
         <div className="rodape">
