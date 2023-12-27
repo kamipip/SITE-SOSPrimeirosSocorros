@@ -166,52 +166,52 @@ body {
 .titulo-equipe {
   font-family: 'Horizon', sans-serif;
   text-align: center;
-  margin: 10vw 0 5vw; /* Use unidades relativas à largura da viewport */
+  margin: 10vw 0 5vw; 
   padding: 2vw;
   color: var(--cor-principal);
   position: absolute;
-  top: 25%; /* Ajuste o valor para mover para baixo */
+  top: 25%; 
   left: 0;
   right: 0;
   transform: translateY(-50%);
 }
 
 .segundo-paragrafo p {
-  font-size: 1.0vw; /* Ajuste conforme necessário */
-  margin-bottom: 1vw; /* Ajuste conforme necessário */
+  font-size: 1.0vw; 
+  margin-bottom: 1vw; 
 }
 
-/* Outras regras de estilo do .segundo-paragrafo aqui */
+
 
 @media only screen and (max-width: 768px) {
   .titulo-equipe {
-    margin: 8vw 0 4vw; /* Ajuste conforme necessário */
+    margin: 8vw 0 4vw; 
   }
 
   .segundo-paragrafo {
-    margin-top: -5vw; /* Ajuste conforme necessário */
-    padding: 4vw; /* Ajuste conforme necessário */
+    margin-top: -5vw; 
+    padding: 4vw; 
   }
 
   .segundo-paragrafo p {
-    font-size: 4vw; /* Ajuste conforme necessário */
-    margin-bottom: 2vw; /* Ajuste conforme necessário */
+    font-size: 4vw; 
+    margin-bottom: 2vw; 
   }
 }
 
 @media only screen and (max-width: 480px) {
   .titulo-equipe {
-    margin: 15vw 0 3vw; /* Ajuste conforme necessário */
+    margin: 150vw 0 3vw; 
   }
 
   .segundo-paragrafo {
-    margin-top: -3vw; /* Ajuste conforme necessário */
-    padding: 3vw; /* Ajuste conforme necessário */
+    margin-top: -3vw; 
+    padding: 3vw; 
   }
 
   .segundo-paragrafo p {
-    font-size: 4vw; /* Ajuste conforme necessário */
-    margin-bottom: 1.5vw; /* Ajuste conforme necessário */
+    font-size: 4vw; 
+    margin-bottom: 1.5vw; 
   }
 }
 
@@ -219,14 +219,14 @@ body {
 .container-eclipses {
   display: flex;
   justify-content: center;
-  margin-top: 3vw; /* Ajuste conforme necessário */
+  margin-top: 3vw; 
 }
 
 .eclipse,
 .eclipsepessoa {
-  width: 200px; /* Ajuste conforme necessário */
-  height: 200px; /* Ajuste conforme necessário */
-  margin-right: 2px; /* Adicione margem entre as eclipses, ajuste conforme necessário */
+  width: 200px; 
+  height: 200px; 
+  margin-right: 2px; 
   margin-top: 20px;
   cursor: pointer;
   position: relative;
@@ -244,42 +244,42 @@ body {
 
 .eclipse p,
 .eclipsepessoa p {
-  margin-top: 20px; /* Ajuste conforme necessário */
+  margin-top: 20px; 
 }
 
 @media only screen and (max-width: 768px) {
   .container-eclipses {
-    margin-top: 70px; /* Ajuste conforme necessário */
+    margin-top: 70px; 
   }
 
   .eclipse,
   .eclipsepessoa {
-    width: 30vw; /* Ajuste conforme necessário */
-    height: 30vw; /* Ajuste conforme necessário */
-    margin-right: 1vw; /* Ajuste conforme necessário */
+    width: 30vw; 
+    height: 30vw; 
+    margin-right: 1vw; 
   }
 
   .eclipse p,
   .eclipsepessoa p {
-    margin-top: 3vw; /* Ajuste conforme necessário */
+    margin-top: 3vw;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .container-eclipses {
-    margin-top: 8vw; /* Ajuste conforme necessário */
+    margin-top: 8vw; 
   }
 
   .eclipse,
   .eclipsepessoa {
-    width: 40vw; /* Ajuste conforme necessário */
-    height: 40vw; /* Ajuste conforme necessário */
-    margin-right: 2vw; /* Ajuste conforme necessário */
+    width: 40vw; 
+    height: 40vw; 
+    margin-right: 2vw; 
   }
 
   .eclipse p,
   .eclipsepessoa p {
-    margin-top: 4vw; /* Ajuste conforme necessário */
+    margin-top: 4vw; 
   }
 }
 
@@ -403,7 +403,7 @@ body {
   overflow: hidden;
 }
 
-/* Adaptação para telas menores */
+
 @media only screen and (max-width: 768px) {
   .sobre-pessoa {
     margin-top: -104%; 
