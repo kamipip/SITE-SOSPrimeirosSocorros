@@ -69,17 +69,17 @@ const PageLucas = () => {
 
       <div className="sobre-pessoa">
         <p>Olá, meu nome é Lucas Matheus, e sou um profissional apaixonado pela interseção entre desenvolvimento e segurança cibernética. Atualmente, lidero a transformação da LavaiLavem Turismo como CoFundador, onde fui responsável pela informatização dos processos e reestruturação da marca, integrando tecnologias emergentes. 
-        <br />Além disso, acabei contribuindo no desenvolvimento e segurança da informação de grandes instituições como TikTok, Itaú, PRF e UFRN. </p>
+        <br />Além disso, acabei contribuindo no desenvolvimento e segurança da informação de grandes instituições como TikTok, Itaú, PRF e UFRN. Conheça mais sobre mim:</p>
       </div>
 
       <div className="botoes-container">
         <a className="botao" href="email@exemplo.com">
           <FontAwesomeIcon icon={faEnvelope} /> 
         </a>
-        <a className="botao" href="https://github.com/JadsonTSI" target="_blank" rel="noopener noreferrer">
+        <a className="botao" href="https://github.com/samsepiol1" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} /> 
         </a>
-        <a className="botao" href="https://www.instagram.com/jadson_leitao/" target="_blank" rel="noopener noreferrer">
+        <a className="botao" href="https://www.instagram.com/1uc4s_m4theus/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} /> 
         </a>
       </div>

@@ -273,7 +273,7 @@ body {
   .eclipse,
   .eclipsepessoa {
     width: 40vw; 
-    height: 40vw; 
+    height: 30vw; 
     margin-right: 2vw; 
   }
 
@@ -294,13 +294,14 @@ body {
 }
 
 .botoes-container {
-  position: fixed;
-  bottom: 50px; 
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  margin-bottom: -290px;
-}
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px; /* Adicione padding para espaçamento interno */
+  margin-left: 40; /* Moverá o contêiner para a direita */
+  width: 110%;
+  }
+
 
 .botao {
   display: inline-block;
@@ -323,9 +324,25 @@ body {
 
 @media only screen and (max-width: 480px) {
   .botoes-container {
-    margin-bottom: -105%; 
+    margin-bottom: 0;
   }
 }
+@media only screen and (max-width: 480px) {
+  
+  .botoes-container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+  }
+  
+  .botao {
+    margin-right: 10px; 
+    
+  }
+  
+}
+
+
 
 @media only screen and (min-height: 600px) {
   .botoes-container {
@@ -406,7 +423,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .sobre-pessoa {
-    margin-top: -104%; 
+    margin-top: -108%; 
   }
 
   .sobre-pessoa p {
