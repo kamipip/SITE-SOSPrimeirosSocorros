@@ -25,13 +25,13 @@ const Home = () => {
 
       {/* Barra de Navegação */}
       <div className="barra-navegacao">
-        <a href="https://github.com/samsepiol1/SOS-Primeiros-Socorros" target="_blank" rel="noopener noreferrer">
+        <a href="https://sos-doc-ten.vercel.app/" target="_blank" rel="noopener noreferrer">
           Documentação
         </a>
         <a href="/#download" target="_blank" rel="noopener noreferrer"> {/* Adcionar link */}
           Download
         </a>
-        <a href="/#repositorio" target="_blank" rel="noopener noreferrer"> {/* Adcionar link */}
+        <a href="https://github.com/samsepiol1/SOS-Primeiros-Socorros" target="_blank" rel="noopener noreferrer"> 
           Repositório
         </a>
       </div>

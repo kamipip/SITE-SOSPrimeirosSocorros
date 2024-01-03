@@ -43,13 +43,13 @@ const PageLucas = () => {
 
       {/* Barra de Navegação */}
       <div className="barra-navegacao">
-        <Link to="https://github.com/samsepiol1/SOS-Primeiros-Socorros">
+        <Link to="https://sos-doc-ten.vercel.app/">
           Documentação
         </Link>
         <Link to="/#download">
           Download
         </Link>
-        <Link to="/#repositorio">
+        <Link to="https://github.com/samsepiol1/SOS-Primeiros-Socorros">
           Repositório
         </Link>
       </div>
