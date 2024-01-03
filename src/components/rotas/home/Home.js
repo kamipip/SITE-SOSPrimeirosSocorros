@@ -41,7 +41,7 @@ const Home = () => {
 
       
       <div className="conteudo">
-        <h1 className="titulo-equipe">Nossa equipe:</h1>
+
 
         {/* Segundo Parágrafo */}
         <div className="segundo-paragrafo">
